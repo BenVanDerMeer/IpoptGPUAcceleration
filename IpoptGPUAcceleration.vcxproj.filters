@@ -1,0 +1,908 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="IpAdaptiveMuUpdate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpAlgBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpAlgorithmRegOp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpAugRestoSystemSolver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpBacktrackingLineSearch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpBlas.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpCGPenaltyCq.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpCGPenaltyData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpCGPenaltyLSAcceptor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpCGPenaltyRegOp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpCGPerturbationHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpCGSearchDirCalc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpCompoundMatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpCompoundSymMatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpCompoundVector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpDebug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpDefaultIterateInitializer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpDenseGenMatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpDenseSymMatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpDenseVector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpDiagMatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpEquilibrationScaling.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpExactHessianUpdater.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpExpandedMultiVectorMatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpExpansionMatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpFilterLSAcceptor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpGenAugSystemSolver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpGenTMatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpGradientScaling.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpIdentityMatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpInexactAlgBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpInexactCq.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpInexactData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpInexactDoglegNormal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpInexactLSAcceptor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpInexactNewtonNormal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpInexactNormalTerminationTester.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpInexactPDSolver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpInexactPDTerminationTester.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpInexactRegOp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpInexactSearchDirCalc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpInexactTSymScalingMethod.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpInterfacesRegOp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpIpoptAlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpIpoptApplication.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpIpoptCalculatedQuantities.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpIpoptData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpIteratesVector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpIterativePardisoSolverInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpIterativeSolverTerminationTester.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpJournalist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpLapack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpLeastSquareMults.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpLibraryLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpLimMemQuasiNewtonUpdater.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpLinearSolversRegOp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpLoqoMuOracle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpLowRankAugSystemSolver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpLowRankSSAugSystemSolver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpLowRankUpdateSymMatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpMa27TSolverInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpMa28TDependencyDetector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpMa57TSolverInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpMa77SolverInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpMa86SolverInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpMa97SolverInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpMatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpMc19TSymScalingMethod.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpMonotoneMuUpdate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpMultiVectorMatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpNLPBoundsRemover.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpNLPScaling.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpObserver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpOptErrorConvCheck.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpOptionsList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpOrigIpoptNLP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpOrigIterationOutput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpPardisoMKLSolverInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpPardisoSolverInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpPDFullSpaceSolver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpPDPerturbationHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpPDSearchDirCalc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpPenaltyLSAcceptor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpPiecewisePenalty.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpProbingMuOracle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpQualityFunctionMuOracle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpRegOptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpRestoConvCheck.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpRestoFilterConvCheck.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpRestoIpoptNLP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpRestoIterateInitializer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpRestoIterationOutput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpRestoMinC_1Nrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpRestoPenaltyConvCheck.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpRestoRestoPhase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpScaledMatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpSlackBasedTSymScalingMethod.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpSolveStatistics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpStdAugSystemSolver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpStdCInterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpStdInterfaceTNLP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpSumMatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpSumSymMatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpSymScaledMatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpSymTMatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpTaggedObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpTimingStatistics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpTNLP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpTNLPAdapter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpTNLPReducer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpTransposeMatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpTripletHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpTripletToCSRConverter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpTSymDependencyDetector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpTSymLinearSolver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpUserScaling.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpVector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpWarmStartIterateInitializer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpZeroMatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpZeroSymMatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpLinearSolvers.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IpStdFInterface.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="config_default.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config_ipopt_default.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="configall_system.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="configall_system_msc.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hsl_ma77d.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hsl_ma77s.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hsl_ma86d.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hsl_ma86s.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hsl_ma97d.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hsl_ma97s.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hsl_mc68i.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpAdaptiveMuUpdate.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpAlgBuilder.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpAlgorithmRegOp.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpAlgStrategy.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpAlgTypes.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpAugRestoSystemSolver.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpAugSystemSolver.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpBacktrackingLineSearch.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpBacktrackingLSAcceptor.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpBlas.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpCachedResults.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpCGPenaltyCq.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpCGPenaltyData.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpCGPenaltyLSAcceptor.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpCGPenaltyRegOp.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpCGPerturbationHandler.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpCGSearchDirCalc.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpCompoundMatrix.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpCompoundSymMatrix.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpCompoundVector.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpConvCheck.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpDebug.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpDefaultIterateInitializer.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpDenseGenMatrix.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpDenseSymMatrix.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpDenseVector.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpDiagMatrix.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpEqMultCalculator.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpEquilibrationScaling.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpExactHessianUpdater.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpException.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpExpandedMultiVectorMatrix.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpExpansionMatrix.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpFilter.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpFilterLSAcceptor.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpGenAugSystemSolver.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpGenKKTSolverInterface.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpGenTMatrix.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpGradientScaling.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpHessianUpdater.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpIdentityMatrix.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpInexactAlgBuilder.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpInexactCq.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpInexactData.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpInexactDoglegNormal.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpInexactLSAcceptor.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpInexactNewtonNormal.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpInexactNormalStepCalc.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpInexactNormalTerminationTester.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpInexactPDSolver.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpInexactPDTerminationTester.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpInexactRegOp.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpInexactSearchDirCalc.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpInexactTSymScalingMethod.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpInterfacesRegOp.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpIpoptAlg.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpIpoptApplication.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpIpoptCalculatedQuantities.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpIpoptData.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpIpoptNLP.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpIterateInitializer.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpIteratesVector.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpIterationOutput.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpIterativePardisoSolverInterface.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpIterativeSolverTerminationTester.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpJournalist.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpLapack.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpLeastSquareMults.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpLibraryLoader.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpLimMemQuasiNewtonUpdater.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpLinearSolvers.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpLinearSolversRegOp.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpLineSearch.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpLoqoMuOracle.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpLowRankAugSystemSolver.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpLowRankSSAugSystemSolver.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpLowRankUpdateSymMatrix.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpMa27TSolverInterface.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpMa28TDependencyDetector.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpMa57TSolverInterface.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpMa77SolverInterface.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpMa86SolverInterface.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpMa97SolverInterface.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpMatrix.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpMc19TSymScalingMethod.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpMonotoneMuUpdate.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpMultiVectorMatrix.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpMuOracle.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpMuUpdate.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpNLP.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpNLPBoundsRemover.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpNLPScaling.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpObserver.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpoptConfig.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpOptErrorConvCheck.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpOptionsList.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpOrigIpoptNLP.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpOrigIterationOutput.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpPardisoMKLSolverInterface.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpPardisoSolverInterface.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpPDFullSpaceSolver.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpPDPerturbationHandler.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpPDSearchDirCalc.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpPDSystemSolver.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpPenaltyLSAcceptor.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpPiecewisePenalty.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpProbingMuOracle.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpQualityFunctionMuOracle.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpReferenced.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpRegOptions.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpRestoConvCheck.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpRestoFilterConvCheck.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpRestoIpoptNLP.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpRestoIterateInitializer.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpRestoIterationOutput.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpRestoMinC_1Nrm.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpRestoPenaltyConvCheck.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpRestoPhase.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpRestoRestoPhase.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpReturnCodes.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpReturnCodes.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpReturnCodes_inc.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpScaledMatrix.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpSearchDirCalculator.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpSlackBasedTSymScalingMethod.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpSmartPtr.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpSolveStatistics.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpSparseSymLinearSolverInterface.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpStdAugSystemSolver.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpStdCInterface.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpStdInterfaceTNLP.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpSumMatrix.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpSumSymMatrix.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpSymLinearSolver.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpSymMatrix.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpSymScaledMatrix.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpSymTMatrix.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpTaggedObject.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpTDependencyDetector.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpTimedTask.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpTimingStatistics.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpTNLP.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpTNLPAdapter.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpTNLPReducer.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpTransposeMatrix.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpTripletHelper.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpTripletToCSRConverter.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpTSymDependencyDetector.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpTSymLinearSolver.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpTSymScalingMethod.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpTypes.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpTypes.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpUserScaling.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpUtils.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpVector.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpWarmStartIterateInitializer.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpZeroMatrix.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IpZeroSymMatrix.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IpReturnCodes.inc">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{D9D94304-514F-4A0D-80A0-182B768231A1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseInteloneMKL>No</UseInteloneMKL>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(SolutionDir)lib;C:\Program Files (x86)\Intel\oneAPI\mkl\2023.2.0\lib\intel64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>mkl_core_dll.lib;mkl_intel_lp64_dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="IpAdaptiveMuUpdate.cpp" />
+    <ClCompile Include="IpAlgBuilder.cpp" />
+    <ClCompile Include="IpAlgorithmRegOp.cpp" />
+    <ClCompile Include="IpAugRestoSystemSolver.cpp" />
+    <ClCompile Include="IpBacktrackingLineSearch.cpp" />
+    <ClCompile Include="IpBlas.cpp" />
+    <ClCompile Include="IpCGPenaltyCq.cpp" />
+    <ClCompile Include="IpCGPenaltyData.cpp" />
+    <ClCompile Include="IpCGPenaltyLSAcceptor.cpp" />
+    <ClCompile Include="IpCGPenaltyRegOp.cpp" />
+    <ClCompile Include="IpCGPerturbationHandler.cpp" />
+    <ClCompile Include="IpCGSearchDirCalc.cpp" />
+    <ClCompile Include="IpCompoundMatrix.cpp" />
+    <ClCompile Include="IpCompoundSymMatrix.cpp" />
+    <ClCompile Include="IpCompoundVector.cpp" />
+    <ClCompile Include="IpDebug.cpp" />
+    <ClCompile Include="IpDefaultIterateInitializer.cpp" />
+    <ClCompile Include="IpDenseGenMatrix.cpp" />
+    <ClCompile Include="IpDenseSymMatrix.cpp" />
+    <ClCompile Include="IpDenseVector.cpp" />
+    <ClCompile Include="IpDiagMatrix.cpp" />
+    <ClCompile Include="IpEquilibrationScaling.cpp" />
+    <ClCompile Include="IpExactHessianUpdater.cpp" />
+    <ClCompile Include="IpExpandedMultiVectorMatrix.cpp" />
+    <ClCompile Include="IpExpansionMatrix.cpp" />
+    <ClCompile Include="IpFilter.cpp" />
+    <ClCompile Include="IpFilterLSAcceptor.cpp" />
+    <ClCompile Include="IpGenAugSystemSolver.cpp" />
+    <ClCompile Include="IpGenTMatrix.cpp" />
+    <ClCompile Include="IpGradientScaling.cpp" />
+    <ClCompile Include="IpIdentityMatrix.cpp" />
+    <ClCompile Include="IpInexactAlgBuilder.cpp" />
+    <ClCompile Include="IpInexactCq.cpp" />
+    <ClCompile Include="IpInexactData.cpp" />
+    <ClCompile Include="IpInexactDoglegNormal.cpp" />
+    <ClCompile Include="IpInexactLSAcceptor.cpp" />
+    <ClCompile Include="IpInexactNewtonNormal.cpp" />
+    <ClCompile Include="IpInexactNormalTerminationTester.cpp" />
+    <ClCompile Include="IpInexactPDSolver.cpp" />
+    <ClCompile Include="IpInexactPDTerminationTester.cpp" />
+    <ClCompile Include="IpInexactRegOp.cpp" />
+    <ClCompile Include="IpInexactSearchDirCalc.cpp" />
+    <ClCompile Include="IpInexactTSymScalingMethod.cpp" />
+    <ClCompile Include="IpInterfacesRegOp.cpp" />
+    <ClCompile Include="IpIpoptAlg.cpp" />
+    <ClCompile Include="IpIpoptApplication.cpp" />
+    <ClCompile Include="IpIpoptCalculatedQuantities.cpp" />
+    <ClCompile Include="IpIpoptData.cpp" />
+    <ClCompile Include="IpIteratesVector.cpp" />
+    <ClCompile Include="IpIterativePardisoSolverInterface.cpp" />
+    <ClCompile Include="IpIterativeSolverTerminationTester.cpp" />
+    <ClCompile Include="IpJournalist.cpp" />
+    <ClCompile Include="IpLapack.cpp" />
+    <ClCompile Include="IpLeastSquareMults.cpp" />
+    <ClCompile Include="IpLibraryLoader.cpp" />
+    <ClCompile Include="IpLimMemQuasiNewtonUpdater.cpp" />
+    <ClCompile Include="IpLinearSolvers.c" />
+    <ClCompile Include="IpLinearSolversRegOp.cpp" />
+    <ClCompile Include="IpLoqoMuOracle.cpp" />
+    <ClCompile Include="IpLowRankAugSystemSolver.cpp" />
+    <ClCompile Include="IpLowRankSSAugSystemSolver.cpp" />
+    <ClCompile Include="IpLowRankUpdateSymMatrix.cpp" />
+    <ClCompile Include="IpMa27TSolverInterface.cpp" />
+    <ClCompile Include="IpMa28TDependencyDetector.cpp" />
+    <ClCompile Include="IpMa57TSolverInterface.cpp" />
+    <ClCompile Include="IpMa77SolverInterface.cpp" />
+    <ClCompile Include="IpMa86SolverInterface.cpp" />
+    <ClCompile Include="IpMa97SolverInterface.cpp" />
+    <ClCompile Include="IpMatrix.cpp" />
+    <ClCompile Include="IpMc19TSymScalingMethod.cpp" />
+    <ClCompile Include="IpMonotoneMuUpdate.cpp" />
+    <ClCompile Include="IpMultiVectorMatrix.cpp" />
+    <ClCompile Include="IpNLPBoundsRemover.cpp" />
+    <ClCompile Include="IpNLPScaling.cpp" />
+    <ClCompile Include="IpObserver.cpp" />
+    <ClCompile Include="IpOptErrorConvCheck.cpp" />
+    <ClCompile Include="IpOptionsList.cpp" />
+    <ClCompile Include="IpOrigIpoptNLP.cpp" />
+    <ClCompile Include="IpOrigIterationOutput.cpp" />
+    <ClCompile Include="IpPardisoMKLSolverInterface.cpp" />
+    <ClCompile Include="IpPardisoSolverInterface.cpp" />
+    <ClCompile Include="IpPDFullSpaceSolver.cpp" />
+    <ClCompile Include="IpPDPerturbationHandler.cpp" />
+    <ClCompile Include="IpPDSearchDirCalc.cpp" />
+    <ClCompile Include="IpPenaltyLSAcceptor.cpp" />
+    <ClCompile Include="IpPiecewisePenalty.cpp" />
+    <ClCompile Include="IpProbingMuOracle.cpp" />
+    <ClCompile Include="IpQualityFunctionMuOracle.cpp" />
+    <ClCompile Include="IpRegOptions.cpp" />
+    <ClCompile Include="IpRestoConvCheck.cpp" />
+    <ClCompile Include="IpRestoFilterConvCheck.cpp" />
+    <ClCompile Include="IpRestoIpoptNLP.cpp" />
+    <ClCompile Include="IpRestoIterateInitializer.cpp" />
+    <ClCompile Include="IpRestoIterationOutput.cpp" />
+    <ClCompile Include="IpRestoMinC_1Nrm.cpp" />
+    <ClCompile Include="IpRestoPenaltyConvCheck.cpp" />
+    <ClCompile Include="IpRestoRestoPhase.cpp" />
+    <ClCompile Include="IpScaledMatrix.cpp" />
+    <ClCompile Include="IpSlackBasedTSymScalingMethod.cpp" />
+    <ClCompile Include="IpSolveStatistics.cpp" />
+    <ClCompile Include="IpStdAugSystemSolver.cpp" />
+    <ClCompile Include="IpStdCInterface.cpp" />
+    <ClCompile Include="IpStdFInterface.c" />
+    <ClCompile Include="IpStdInterfaceTNLP.cpp" />
+    <ClCompile Include="IpSumMatrix.cpp" />
+    <ClCompile Include="IpSumSymMatrix.cpp" />
+    <ClCompile Include="IpSymScaledMatrix.cpp" />
+    <ClCompile Include="IpSymTMatrix.cpp" />
+    <ClCompile Include="IpTaggedObject.cpp" />
+    <ClCompile Include="IpTimingStatistics.cpp" />
+    <ClCompile Include="IpTNLP.cpp" />
+    <ClCompile Include="IpTNLPAdapter.cpp" />
+    <ClCompile Include="IpTNLPReducer.cpp" />
+    <ClCompile Include="IpTransposeMatrix.cpp" />
+    <ClCompile Include="IpTripletHelper.cpp" />
+    <ClCompile Include="IpTripletToCSRConverter.cpp" />
+    <ClCompile Include="IpTSymDependencyDetector.cpp" />
+    <ClCompile Include="IpTSymLinearSolver.cpp" />
+    <ClCompile Include="IpUserScaling.cpp" />
+    <ClCompile Include="IpUtils.cpp" />
+    <ClCompile Include="IpVector.cpp" />
+    <ClCompile Include="IpWarmStartIterateInitializer.cpp" />
+    <ClCompile Include="IpZeroMatrix.cpp" />
+    <ClCompile Include="IpZeroSymMatrix.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="configall_system.h" />
+    <ClInclude Include="configall_system_msc.h" />
+    <ClInclude Include="config_default.h" />
+    <ClInclude Include="config_ipopt_default.h" />
+    <ClInclude Include="hsl_ma77d.h" />
+    <ClInclude Include="hsl_ma77s.h" />
+    <ClInclude Include="hsl_ma86d.h" />
+    <ClInclude Include="hsl_ma86s.h" />
+    <ClInclude Include="hsl_ma97d.h" />
+    <ClInclude Include="hsl_ma97s.h" />
+    <ClInclude Include="hsl_mc68i.h" />
+    <ClInclude Include="IpAdaptiveMuUpdate.hpp" />
+    <ClInclude Include="IpAlgBuilder.hpp" />
+    <ClInclude Include="IpAlgorithmRegOp.hpp" />
+    <ClInclude Include="IpAlgStrategy.hpp" />
+    <ClInclude Include="IpAlgTypes.hpp" />
+    <ClInclude Include="IpAugRestoSystemSolver.hpp" />
+    <ClInclude Include="IpAugSystemSolver.hpp" />
+    <ClInclude Include="IpBacktrackingLineSearch.hpp" />
+    <ClInclude Include="IpBacktrackingLSAcceptor.hpp" />
+    <ClInclude Include="IpBlas.hpp" />
+    <ClInclude Include="IpCachedResults.hpp" />
+    <ClInclude Include="IpCGPenaltyCq.hpp" />
+    <ClInclude Include="IpCGPenaltyData.hpp" />
+    <ClInclude Include="IpCGPenaltyLSAcceptor.hpp" />
+    <ClInclude Include="IpCGPenaltyRegOp.hpp" />
+    <ClInclude Include="IpCGPerturbationHandler.hpp" />
+    <ClInclude Include="IpCGSearchDirCalc.hpp" />
+    <ClInclude Include="IpCompoundMatrix.hpp" />
+    <ClInclude Include="IpCompoundSymMatrix.hpp" />
+    <ClInclude Include="IpCompoundVector.hpp" />
+    <ClInclude Include="IpConvCheck.hpp" />
+    <ClInclude Include="IpDebug.hpp" />
+    <ClInclude Include="IpDefaultIterateInitializer.hpp" />
+    <ClInclude Include="IpDenseGenMatrix.hpp" />
+    <ClInclude Include="IpDenseSymMatrix.hpp" />
+    <ClInclude Include="IpDenseVector.hpp" />
+    <ClInclude Include="IpDiagMatrix.hpp" />
+    <ClInclude Include="IpEqMultCalculator.hpp" />
+    <ClInclude Include="IpEquilibrationScaling.hpp" />
+    <ClInclude Include="IpExactHessianUpdater.hpp" />
+    <ClInclude Include="IpException.hpp" />
+    <ClInclude Include="IpExpandedMultiVectorMatrix.hpp" />
+    <ClInclude Include="IpExpansionMatrix.hpp" />
+    <ClInclude Include="IpFilter.hpp" />
+    <ClInclude Include="IpFilterLSAcceptor.hpp" />
+    <ClInclude Include="IpGenAugSystemSolver.hpp" />
+    <ClInclude Include="IpGenKKTSolverInterface.hpp" />
+    <ClInclude Include="IpGenTMatrix.hpp" />
+    <ClInclude Include="IpGradientScaling.hpp" />
+    <ClInclude Include="IpHessianUpdater.hpp" />
+    <ClInclude Include="IpIdentityMatrix.hpp" />
+    <ClInclude Include="IpInexactAlgBuilder.hpp" />
+    <ClInclude Include="IpInexactCq.hpp" />
+    <ClInclude Include="IpInexactData.hpp" />
+    <ClInclude Include="IpInexactDoglegNormal.hpp" />
+    <ClInclude Include="IpInexactLSAcceptor.hpp" />
+    <ClInclude Include="IpInexactNewtonNormal.hpp" />
+    <ClInclude Include="IpInexactNormalStepCalc.hpp" />
+    <ClInclude Include="IpInexactNormalTerminationTester.hpp" />
+    <ClInclude Include="IpInexactPDSolver.hpp" />
+    <ClInclude Include="IpInexactPDTerminationTester.hpp" />
+    <ClInclude Include="IpInexactRegOp.hpp" />
+    <ClInclude Include="IpInexactSearchDirCalc.hpp" />
+    <ClInclude Include="IpInexactTSymScalingMethod.hpp" />
+    <ClInclude Include="IpInterfacesRegOp.hpp" />
+    <ClInclude Include="IpIpoptAlg.hpp" />
+    <ClInclude Include="IpIpoptApplication.hpp" />
+    <ClInclude Include="IpIpoptCalculatedQuantities.hpp" />
+    <ClInclude Include="IpIpoptData.hpp" />
+    <ClInclude Include="IpIpoptNLP.hpp" />
+    <ClInclude Include="IpIterateInitializer.hpp" />
+    <ClInclude Include="IpIteratesVector.hpp" />
+    <ClInclude Include="IpIterationOutput.hpp" />
+    <ClInclude Include="IpIterativePardisoSolverInterface.hpp" />
+    <ClInclude Include="IpIterativeSolverTerminationTester.hpp" />
+    <ClInclude Include="IpJournalist.hpp" />
+    <ClInclude Include="IpLapack.hpp" />
+    <ClInclude Include="IpLeastSquareMults.hpp" />
+    <ClInclude Include="IpLibraryLoader.hpp" />
+    <ClInclude Include="IpLimMemQuasiNewtonUpdater.hpp" />
+    <ClInclude Include="IpLinearSolvers.h" />
+    <ClInclude Include="IpLinearSolversRegOp.hpp" />
+    <ClInclude Include="IpLineSearch.hpp" />
+    <ClInclude Include="IpLoqoMuOracle.hpp" />
+    <ClInclude Include="IpLowRankAugSystemSolver.hpp" />
+    <ClInclude Include="IpLowRankSSAugSystemSolver.hpp" />
+    <ClInclude Include="IpLowRankUpdateSymMatrix.hpp" />
+    <ClInclude Include="IpMa27TSolverInterface.hpp" />
+    <ClInclude Include="IpMa28TDependencyDetector.hpp" />
+    <ClInclude Include="IpMa57TSolverInterface.hpp" />
+    <ClInclude Include="IpMa77SolverInterface.hpp" />
+    <ClInclude Include="IpMa86SolverInterface.hpp" />
+    <ClInclude Include="IpMa97SolverInterface.hpp" />
+    <ClInclude Include="IpMatrix.hpp" />
+    <ClInclude Include="IpMc19TSymScalingMethod.hpp" />
+    <ClInclude Include="IpMonotoneMuUpdate.hpp" />
+    <ClInclude Include="IpMultiVectorMatrix.hpp" />
+    <ClInclude Include="IpMuOracle.hpp" />
+    <ClInclude Include="IpMuUpdate.hpp" />
+    <ClInclude Include="IpNLP.hpp" />
+    <ClInclude Include="IpNLPBoundsRemover.hpp" />
+    <ClInclude Include="IpNLPScaling.hpp" />
+    <ClInclude Include="IpObserver.hpp" />
+    <ClInclude Include="IpoptConfig.h" />
+    <ClInclude Include="IpOptErrorConvCheck.hpp" />
+    <ClInclude Include="IpOptionsList.hpp" />
+    <ClInclude Include="IpOrigIpoptNLP.hpp" />
+    <ClInclude Include="IpOrigIterationOutput.hpp" />
+    <ClInclude Include="IpPardisoMKLSolverInterface.hpp" />
+    <ClInclude Include="IpPardisoSolverInterface.hpp" />
+    <ClInclude Include="IpPDFullSpaceSolver.hpp" />
+    <ClInclude Include="IpPDPerturbationHandler.hpp" />
+    <ClInclude Include="IpPDSearchDirCalc.hpp" />
+    <ClInclude Include="IpPDSystemSolver.hpp" />
+    <ClInclude Include="IpPenaltyLSAcceptor.hpp" />
+    <ClInclude Include="IpPiecewisePenalty.hpp" />
+    <ClInclude Include="IpProbingMuOracle.hpp" />
+    <ClInclude Include="IpQualityFunctionMuOracle.hpp" />
+    <ClInclude Include="IpReferenced.hpp" />
+    <ClInclude Include="IpRegOptions.hpp" />
+    <ClInclude Include="IpRestoConvCheck.hpp" />
+    <ClInclude Include="IpRestoFilterConvCheck.hpp" />
+    <ClInclude Include="IpRestoIpoptNLP.hpp" />
+    <ClInclude Include="IpRestoIterateInitializer.hpp" />
+    <ClInclude Include="IpRestoIterationOutput.hpp" />
+    <ClInclude Include="IpRestoMinC_1Nrm.hpp" />
+    <ClInclude Include="IpRestoPenaltyConvCheck.hpp" />
+    <ClInclude Include="IpRestoPhase.hpp" />
+    <ClInclude Include="IpRestoRestoPhase.hpp" />
+    <ClInclude Include="IpReturnCodes.h" />
+    <ClInclude Include="IpReturnCodes.hpp" />
+    <ClInclude Include="IpReturnCodes_inc.h" />
+    <ClInclude Include="IpScaledMatrix.hpp" />
+    <ClInclude Include="IpSearchDirCalculator.hpp" />
+    <ClInclude Include="IpSlackBasedTSymScalingMethod.hpp" />
+    <ClInclude Include="IpSmartPtr.hpp" />
+    <ClInclude Include="IpSolveStatistics.hpp" />
+    <ClInclude Include="IpSparseSymLinearSolverInterface.hpp" />
+    <ClInclude Include="IpStdAugSystemSolver.hpp" />
+    <ClInclude Include="IpStdCInterface.h" />
+    <ClInclude Include="IpStdInterfaceTNLP.hpp" />
+    <ClInclude Include="IpSumMatrix.hpp" />
+    <ClInclude Include="IpSumSymMatrix.hpp" />
+    <ClInclude Include="IpSymLinearSolver.hpp" />
+    <ClInclude Include="IpSymMatrix.hpp" />
+    <ClInclude Include="IpSymScaledMatrix.hpp" />
+    <ClInclude Include="IpSymTMatrix.hpp" />
+    <ClInclude Include="IpTaggedObject.hpp" />
+    <ClInclude Include="IpTDependencyDetector.hpp" />
+    <ClInclude Include="IpTimedTask.hpp" />
+    <ClInclude Include="IpTimingStatistics.hpp" />
+    <ClInclude Include="IpTNLP.hpp" />
+    <ClInclude Include="IpTNLPAdapter.hpp" />
+    <ClInclude Include="IpTNLPReducer.hpp" />
+    <ClInclude Include="IpTransposeMatrix.hpp" />
+    <ClInclude Include="IpTripletHelper.hpp" />
+    <ClInclude Include="IpTripletToCSRConverter.hpp" />
+    <ClInclude Include="IpTSymDependencyDetector.hpp" />
+    <ClInclude Include="IpTSymLinearSolver.hpp" />
+    <ClInclude Include="IpTSymScalingMethod.hpp" />
+    <ClInclude Include="IpTypes.h" />
+    <ClInclude Include="IpTypes.hpp" />
+    <ClInclude Include="IpUserScaling.hpp" />
+    <ClInclude Include="IpUtils.hpp" />
+    <ClInclude Include="IpVector.hpp" />
+    <ClInclude Include="IpWarmStartIterateInitializer.hpp" />
+    <ClInclude Include="IpZeroMatrix.hpp" />
+    <ClInclude Include="IpZeroSymMatrix.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IpReturnCodes.inc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
