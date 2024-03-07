@@ -251,6 +251,7 @@
     <ClCompile Include="IpZeroMatrix.cpp" />
     <ClCompile Include="IpZeroSymMatrix.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="OptimisationProblem.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="configall_system.h" />
@@ -422,6 +423,7 @@
     <ClInclude Include="IpWarmStartIterateInitializer.hpp" />
     <ClInclude Include="IpZeroMatrix.hpp" />
     <ClInclude Include="IpZeroSymMatrix.hpp" />
+    <ClInclude Include="OptimisationProblem.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="IpReturnCodes.inc" />

@@ -42,7 +42,7 @@
 /* #undef IPOPT_HAS_LINEARSOLVERLOADER */
 
 /* Define to 1 if you are using Pardiso from MKL */
-/* #undef IPOPT_HAS_PARDISO_MKL */
+#define IPOPT_HAS_PARDISO_MKL 1
 
 /* Define to 1 if SPRAL is available */
 /* #undef IPOPT_HAS_SPRAL */
