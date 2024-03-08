@@ -60,6 +60,10 @@ IpoptLinearSolver IpoptGetAvailableLinearSolvers(
    solvers |= IPOPTLINEARSOLVER_MUMPS;
 #endif
 
+#ifdef IPOPT_HAS_CUDA
+   solvers |= IPOPTLINEARSOLVER_CUDA;
+#endif
+
 #if defined(IPOPT_HAS_LINEARSOLVERLOADER)
    if( !buildinonly )
    {

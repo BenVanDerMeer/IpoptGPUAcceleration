@@ -72,6 +72,9 @@
 #ifdef IPOPT_HAS_MUMPS
 # include "IpMumpsSolverInterface.hpp"
 #endif
+#ifdef IPOPT_HAS_CUDA
+# include "CUDASolverInterface.h"
+#endif
 
 namespace Ipopt
 {
@@ -201,6 +204,12 @@ void AlgorithmBuilder::RegisterOptions(
       descrs.push_back("use the Mumps package");
    }
 
+   if (availablesolvers & IPOPTLINEARSOLVER_CUDA)
+   {
+	  options.push_back("cuda");
+	  descrs.push_back("use the CUDA package from NVIDIA");
+   }
+
    options.push_back("custom");
    descrs.push_back("use custom linear solver (expert use)");
 
@@ -248,6 +257,10 @@ void AlgorithmBuilder::RegisterOptions(
    else if( availablesolvers & IPOPTLINEARSOLVER_MA27 )
    {
       defaultsolver = "ma27";
+   }
+   else if (availablesolvers & IPOPTLINEARSOLVER_CUDA)
+   {
+      defaultsolver = "cuda";
    }
    else
    {
@@ -511,6 +524,13 @@ SmartPtr<SymLinearSolver> AlgorithmBuilder::SymLinearSolverFactory(
    {
       SolverInterface = new MumpsSolverInterface();
       linear_solver = MumpsSolverInterface::GetName();
+   }
+#endif
+
+#ifdef IPOPT_HAS_CUDA
+   else if (linear_solver == "cuda")
+   {
+	   SolverInterface = new CUDASolverInterface();
    }
 #endif
 

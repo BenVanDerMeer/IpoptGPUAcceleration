@@ -27,6 +27,7 @@ public:
 	int numConstraints;
 	std::vector<std::vector<double>> constraintsCoefficients; // [constraint][freedom]
 	std::vector<double> constraintsConstant;
+	std::vector<double> objectiveFunctionCoefficients;
 };
 
 #endif

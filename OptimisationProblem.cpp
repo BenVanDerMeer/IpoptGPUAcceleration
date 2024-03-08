@@ -16,7 +16,7 @@ OptimisationProblem::OptimisationProblem(int numFreedoms_, int numConstraints_)
 		std::vector<double> constraintCoefficients;
 		for (int j = 0; j < numFreedoms; j++)
 		{
-			constraintCoefficients.push_back(rand() / (double)RAND_MAX * 20.0 - 10.0);
+			constraintCoefficients.push_back(rand() / (double)RAND_MAX * 2.0 - 1.0);
 		}
 		constraintsCoefficients.push_back(constraintCoefficients);
 	}
@@ -28,8 +28,13 @@ OptimisationProblem::OptimisationProblem(int numFreedoms_, int numConstraints_)
 		{
 			constant += constraintsCoefficients[i][j] * includedPoint[j];
 		}
-		constant -= rand() / (double)RAND_MAX;
+		constant += rand() / (double)RAND_MAX;
 		constraintsConstant.push_back(constant);
+	}
+
+	for (int i = 0; i < numFreedoms; i++)
+	{
+		objectiveFunctionCoefficients.push_back(rand() / (double)RAND_MAX);
 	}
 }
 
@@ -73,7 +78,7 @@ bool OptimisationProblem::eval_f(Ipopt::Index n, const Ipopt::Number* x, bool ne
 	obj_value = 0.0;
 	for (int i = 0; i < n; i++)
 	{
-		obj_value += x[i];
+		obj_value += x[i] * objectiveFunctionCoefficients[i];
 	}
 	return true;
 }
@@ -82,7 +87,7 @@ bool OptimisationProblem::eval_grad_f(Ipopt::Index n, const Ipopt::Number* x, bo
 {
 	for (int i = 0; i < n; i++)
 	{
-		grad_f[i] = 1.0;
+		grad_f[i] = objectiveFunctionCoefficients[i];
 	}
 	return true;
 }

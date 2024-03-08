@@ -30,6 +30,9 @@
 # include "IpWsmpSolverInterface.hpp"
 # include "IpIterativeWsmpSolverInterface.hpp"
 #endif
+#ifdef IPOPT_HAS_CUDA
+# include "CUDASolverInterface.h"
+#endif
 
 namespace Ipopt
 {
@@ -119,6 +122,14 @@ void RegisterOptions_LinearSolvers(
 #if ((defined(COINHSL_HAS_MA28) && !defined(IPOPT_SINGLE)) || (defined(COINHSL_HAS_MA28S) && defined(IPOPT_SINGLE))) && defined(F77_FUNC)
    roptions->SetRegisteringCategory("MA28 Linear Solver");
    Ma28TDependencyDetector::RegisterOptions(roptions);
+#endif
+
+#ifdef IPOPT_HAS_CUDA
+   if (availablesolvers & IPOPTLINEARSOLVER_CUDA)
+   {
+	  roptions->SetRegisteringCategory("CUDA Linear Solver");
+	  CUDASolverInterface::RegisterOptions(roptions);
+   }
 #endif
 }
 
