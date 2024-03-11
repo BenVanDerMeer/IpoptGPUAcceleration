@@ -33,6 +33,7 @@
 #else /* HAVE_CONFIG_H */
 
 #define IPOPTLIB_BUILD
+#define DLL_EXPORT
 
 #ifdef IPOPTLIB_BUILD
 #include "config_default.h"
